@@ -23,7 +23,7 @@ ${resultToFile}`;
 
   HaveToList ? console.log(dataToConsole) : null;
 
-  fileSystem.writeFileSync(`table-${numberTimesBase}.txt`, dataToFile);
+  fileSystem.writeFileSync(`./files/table-${numberTimesBase}.txt`, dataToFile);
 
   return `table-${numberTimesBase}.txt`;
  } catch (error) {
