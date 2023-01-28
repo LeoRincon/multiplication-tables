@@ -3,7 +3,7 @@
  "version": "0.0.1",
  "main": "index.js",
  "scripts": {
-  "watch ": "node --watch"
+  "watch-node": "node --watch"
  },
  "author": "Leonardo Rincon <hi@leorincon.com>",
  "license": "MIT",
