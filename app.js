@@ -1,7 +1,7 @@
-const colors = require('colors');
-
 const { multiply } = require('./src/helpers/multiply');
 const argv = require('./src/config/yargs');
+
+require('colors');
 
 const initialIdex = 1;
 

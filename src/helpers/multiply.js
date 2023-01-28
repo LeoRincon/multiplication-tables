@@ -1,6 +1,5 @@
-const colors = require('colors');
-
 const fileSystem = require('fs');
+require('colors');
 
 const multiply = async (initialIdex, numberTimesBase, limit, HaveToList) => {
  try {
