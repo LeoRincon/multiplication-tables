@@ -1,6 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,node,yarn
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,node,yarn
-
+/files/*.txt
 ### Linux ###
 *~
 
@@ -233,5 +231,3 @@ $RECYCLE.BIN/
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,node,yarn
-
-/salida/*.txt
