@@ -3,22 +3,27 @@ require('colors');
 
 const multiply = async (initialIdex, numberTimesBase, limit, HaveToList) => {
  try {
-  let result = '';
+  let resultToFile = '';
 
   for (let index = initialIdex; index <= limit; index++) {
-   result += `${numberTimesBase} ${'X'.yellow} ${index} ${'='.yellow} ${
+   resultToFile += `${numberTimesBase} X ${index} = ${
     index * numberTimesBase
-   }\n`.cyan;
+   }\n`;
   }
 
-  const data = `${'========================='.yellow}
+  const dataToFile = `=========================
+Table of the ${numberTimesBase}
+=========================
+${resultToFile}`;
+
+  const dataToConsole = `${'========================='.yellow}
 ${`Table of the${numberTimesBase}`.blue}
 ${'========================='.red}
-${result}`;
+${resultToFile}`;
 
-  HaveToList ? console.log(data) : null;
+  HaveToList ? console.log(dataToConsole) : null;
 
-  fileSystem.writeFileSync(`table-${numberTimesBase}.txt`, data);
+  fileSystem.writeFileSync(`table-${numberTimesBase}.txt`, dataToFile);
 
   return `table-${numberTimesBase}.txt`;
  } catch (error) {
