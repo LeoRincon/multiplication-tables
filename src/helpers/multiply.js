@@ -1,6 +1,6 @@
 const fileSystem = require('fs');
 
-const multiply = async (initialIdex, numberTimesBase, limit) => {
+const multiply = async (initialIdex, numberTimesBase, limit, HaveToList) => {
  try {
   let result = '';
 
@@ -13,7 +13,7 @@ Table of the ${numberTimesBase}
 =========================
 ${result}`;
 
-  console.log(data);
+  HaveToList ? console.log(data) : null;
 
   fileSystem.writeFileSync(`table-${numberTimesBase}.txt`, data);
 

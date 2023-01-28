@@ -3,9 +3,13 @@
  "version": "0.0.1",
  "main": "index.js",
  "scripts": {
-  "watch-node": "node --watch node --trace-warnings"
+  "watch-node": "node --watch node"
  },
  "author": "Leonardo Rincon <hi@leorincon.com>",
  "license": "MIT",
- "keywords": []
+ "keywords": [],
+ "dependencies": {
+  "colors": "^1.4.0",
+  "yargs": "^17.6.2"
+ }
 }
