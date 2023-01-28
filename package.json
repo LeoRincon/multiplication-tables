@@ -1,0 +1,11 @@
+{
+ "name": "bases-node-js",
+ "version": "0.0.1",
+ "main": "index.js",
+ "scripts": {
+  "watch ": "node --watch"
+ },
+ "author": "Leonardo Rincon <hi@leorincon.com>",
+ "license": "MIT",
+ "keywords": []
+}
