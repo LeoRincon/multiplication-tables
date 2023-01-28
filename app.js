@@ -1,3 +1,5 @@
+const colors = require('colors');
+
 const { multiply } = require('./src/helpers/multiply');
 const argv = require('./src/config/yargs');
 
@@ -7,10 +9,10 @@ console.clear();
 
 multiply(initialIdex, argv.b, argv.lt, argv.l)
  .then((nameFile) => {
-  console.log(`File: ${nameFile} : created`);
+  console.log(`File: ${nameFile} : created`.green);
  })
  .catch((err) => {
-  console.log(`${err}: the file can not created`);
+  console.log(`${err}: the file can not created`.red);
  });
 
 //!get the arguments from the process of node
