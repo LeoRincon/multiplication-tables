@@ -35,8 +35,9 @@ language:
 - NodeJs: v18.13.0
 
 - dependencies: 
+```
   "colors": "^1.4.0",
   "yargs": "^17.6.2"
- 
+ ```
 
 
